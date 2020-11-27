@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D91FC1C645CF82B9A6B36C5D"
+               BuildableName = "iOS_ScienceCore.app"
+               BlueprintName = "iOS_ScienceCore"
+               ReferencedContainer = "container:iOS_ScienceCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D91FC1C645CF82B9A6B36C5D"
+            BuildableName = "iOS_ScienceCore.app"
+            BlueprintName = "iOS_ScienceCore"
+            ReferencedContainer = "container:iOS_ScienceCore.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
