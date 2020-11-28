@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>94406814166-3tlrnnb9bk00nsqqs6ngcsv5sedr2q1o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.94406814166-3tlrnnb9bk00nsqqs6ngcsv5sedr2q1o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3ygALBOqCMtIG7MsPR1cMWgJO7Dd1crU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>94406814166</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nick.iOS-ScienceCore</string>
+	<key>PROJECT_ID</key>
+	<string>science-ecosystem</string>
+	<key>STORAGE_BUCKET</key>
+	<string>science-ecosystem.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:94406814166:ios:faa24429dcd7db6b9edc77</string>
+	<key>DATABASE_URL</key>
+	<string>https://science-ecosystem.firebaseio.com</string>
+</dict>
+</plist>

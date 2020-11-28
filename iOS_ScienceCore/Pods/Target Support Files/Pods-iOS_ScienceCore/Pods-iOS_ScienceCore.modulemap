@@ -1,0 +1,6 @@
+framework module Pods_iOS_ScienceCore {
+  umbrella header "Pods-iOS_ScienceCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
