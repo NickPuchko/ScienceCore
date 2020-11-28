@@ -18,11 +18,12 @@ struct User {
     var faculty: Faculty
     var projects: [Project]
     var isOpen: Bool
+    var percentile: Float
 
     ///var program: Program?
     
     //MARK: test user
-    init(email: String = "napuchko@edu.hse.ru", fullName: String = "Николай Пучко", status: Status = .student, photo: UIImage = UIImage(imageLiteralResourceName: "vaultBoy"), faculty: Faculty = .economics, projects: [Project] = [], isOpen: Bool = false) {
+    init(email: String = "napuchko@edu.hse.ru", fullName: String = "Николай Пучко", status: Status = .student, photo: UIImage = UIImage(imageLiteralResourceName: "vaultBoy"), faculty: Faculty = .economics, projects: [Project] = [], isOpen: Bool = false, percentile: Float = 0.16) {
         self.email = email
         self.fullName = fullName
         self.status = status
@@ -30,6 +31,7 @@ struct User {
         self.faculty = faculty
         self.projects = projects
         self.isOpen = isOpen
+        self.percentile = percentile
     }
 }
 

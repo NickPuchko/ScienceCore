@@ -15,6 +15,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userStatus: UILabel!
     @IBOutlet weak var userFaculty: UILabel!
     @IBOutlet weak var isOpen: UILabel!
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var percent: UILabel!
+    
+    
     @IBAction func switchOpen(_ sender: UISwitch) {
         model.user.isOpen = !model.user.isOpen
         UIView.transition(with: isOpen, duration: 1.0, options: .transitionCrossDissolve, animations: {
@@ -57,6 +61,9 @@ class ProfileViewController: UIViewController {
         default:
             userFaculty.text = "Факультет Менеджмента и предпринимательства"
         }
+        
+        progress.setProgress(model.user.percentile, animated: true)
+        percent.text = "\(model.user.percentile * 100) %"
         
 
 

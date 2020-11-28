@@ -9,4 +9,7 @@ import Foundation
 
 struct Sample {
     static let user = User()
+    static let project = Project()
 }
+
+

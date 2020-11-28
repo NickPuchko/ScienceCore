@@ -14,6 +14,7 @@
 		C34E6F7A2571CEB600FCB6B3 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F792571CEB600FCB6B3 /* ProfileModel.swift */; };
 		C34E6F812571CF5200FCB6B3 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F802571CF5200FCB6B3 /* Sample.swift */; };
 		C34E6F842572023900FCB6B3 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F832572023900FCB6B3 /* UsersCollectionViewCell.swift */; };
+		C34E6F8F25728EC900FCB6B3 /* CreationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */; };
 		C3D4D6E5257154D00025C9FF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */; };
 		C3D4D6E8257155340025C9FF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E7257155340025C9FF /* EventsViewController.swift */; };
 		C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */; };
@@ -39,6 +40,7 @@
 		C34E6F792571CEB600FCB6B3 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		C34E6F802571CF5200FCB6B3 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		C34E6F832572023900FCB6B3 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
+		C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModel.swift; sourceTree = "<group>"; };
 		C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		C3D4D6E7257155340025C9FF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				C3D4D6F825715DAA0025C9FF /* User.swift */,
 				C34E6F6F2571B55C00FCB6B3 /* Project.swift */,
 				C34E6F792571CEB600FCB6B3 /* ProfileModel.swift */,
+				C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				C34E6F702571B55C00FCB6B3 /* Project.swift in Sources */,
 				C3D4D6F1257156200025C9FF /* ProfileViewController.swift in Sources */,
 				C3D4D6F925715DAA0025C9FF /* User.swift in Sources */,
+				C34E6F8F25728EC900FCB6B3 /* CreationModel.swift in Sources */,
 				C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
