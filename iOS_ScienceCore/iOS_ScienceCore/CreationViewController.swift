@@ -18,10 +18,8 @@ class CreationViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var spreadingPicker: UIPickerView!
     
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBAction func tappedDate(_ sender: Any) {
-        model.project.date = datePicker.date
-
-    }
+    
+    
     @IBOutlet weak var counter: UIStepper!
     @IBAction func stepper(_ sender: Any) {
         stepperLabel.text = String(Int(counter.value))
@@ -68,7 +66,7 @@ class CreationViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func returnLabel(_ sender: Any) {
         resignFirstResponder()
-        if url.text == nil {
+        if url.text == "" {
             url.becomeFirstResponder()
         }
         
@@ -120,7 +118,15 @@ class CreationViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
     }
     
+    @IBAction func nextButton(_ sender: Any) {
+    
+        model.project.date = datePicker.date
+        let vc: AbstractViewController = storyboard!.instantiateViewController(identifier: "AbstractViewController") as AbstractViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 
+    
     
     
     

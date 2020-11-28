@@ -85,7 +85,7 @@
                                 <rect key="frame" x="20" y="89" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue"/>
                                 <connections>
                                     <action selector="changeLabel:" destination="YYf-rG-ULh" eventType="editingDidEnd" id="hP7-AK-frl"/>
                                     <action selector="returnLabel:" destination="YYf-rG-ULh" eventType="editingDidEndOnExit" id="JMw-5I-U7k"/>
@@ -95,7 +95,7 @@
                                 <rect key="frame" x="20" y="160" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="continue"/>
                                 <connections>
                                     <action selector="changeURL:" destination="YYf-rG-ULh" eventType="editingDidEnd" id="xLz-Rs-hOW"/>
                                     <action selector="returnURL:" destination="YYf-rG-ULh" eventType="editingDidEndOnExit" id="OHz-AJ-a8u"/>
@@ -116,10 +116,6 @@
                                     <!--2020-11-29 11:00:00 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="ru_RU"/>
-                                <connections>
-                                    <action selector="datePicker:" destination="YYf-rG-ULh" eventType="valueChanged" id="AFX-53-uiy"/>
-                                    <action selector="tappedDate:" destination="YYf-rG-ULh" eventType="valueChanged" id="RyT-FM-Dcv"/>
-                                </connections>
                             </datePicker>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-NL-mji">
                                 <rect key="frame" x="300" y="368" width="94" height="32"/>
@@ -161,13 +157,10 @@
                                         <integer key="value" value="60"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButton:" destination="YYf-rG-ULh" eventType="touchUpInside" id="BIy-4C-sLk"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Вставьте аннотацию" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IYo-kC-xMJ">
-                                <rect key="frame" x="28" y="522" width="359" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zqV-QM-KNX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -179,6 +172,7 @@
                     <connections>
                         <outlet property="addStyle" destination="O3e-X9-r1i" id="GiJ-i3-T4S"/>
                         <outlet property="counter" destination="ybL-NL-mji" id="Uoe-Fc-V67"/>
+                        <outlet property="datePicker" destination="Jgj-yG-Qna" id="cVg-yQ-ymw"/>
                         <outlet property="label" destination="j8b-lf-AXQ" id="QGc-yP-QPp"/>
                         <outlet property="spreadingPicker" destination="zz8-uV-CGj" id="dxn-hC-TVe"/>
                         <outlet property="stepperLabel" destination="sBb-CP-whI" id="mHE-Q2-SYo"/>
@@ -187,7 +181,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Biq-ED-vif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324.6376811594205" y="95.758928571428569"/>
+            <point key="canvasLocation" x="1325" y="96"/>
+        </scene>
+        <!--Abstract View Controller-->
+        <scene sceneID="kcV-3B-61I">
+            <objects>
+                <viewController storyboardIdentifier="AbstractViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CeJ-EE-fFg" customClass="AbstractViewController" customModule="iOS_ScienceCore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iHs-m4-cKw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Введите аннотацию публикации" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdZ-c9-K8J">
+                                <rect key="frame" x="20" y="123" width="374" height="561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-Wy-Tdf">
+                                <rect key="frame" x="109" y="692" width="196" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                <state key="normal" title="Прикрепить">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FFA-3C-m2c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="applyStyleButton" destination="Q79-Wy-Tdf" id="Rk9-VX-pqh"/>
+                        <outlet property="textView" destination="hdZ-c9-K8J" id="wlt-e8-Nsd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXq-so-K9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324.6376811594205" y="822.99107142857144"/>
         </scene>
         <!--Сотрудники-->
         <scene sceneID="fHY-Yg-MHM">
@@ -341,6 +372,9 @@
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
