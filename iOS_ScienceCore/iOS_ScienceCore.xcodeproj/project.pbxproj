@@ -18,6 +18,7 @@
 		C34E6F932572D35A00FCB6B3 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */; };
 		C34E6F962572E50000FCB6B3 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F952572E50000FCB6B3 /* AbstractModel.swift */; };
 		C38579EC25734D4A0087BCB6 /* TClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C38579EB25734D4A0087BCB6 /* TClassifier.mlmodel */; };
+		C38579F02573619A0087BCB6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38579EF2573619A0087BCB6 /* TabBarViewController.swift */; };
 		C3D4D6E5257154D00025C9FF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */; };
 		C3D4D6E8257155340025C9FF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E7257155340025C9FF /* EventsViewController.swift */; };
 		C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */; };
@@ -47,6 +48,7 @@
 		C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		C34E6F952572E50000FCB6B3 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		C38579EB25734D4A0087BCB6 /* TClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TClassifier.mlmodel; sourceTree = "<group>"; };
+		C38579EF2573619A0087BCB6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		C3D4D6E7257155340025C9FF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				C3D4D6ED257155E50025C9FF /* UsersViewController.swift */,
 				C3D4D6F0257156200025C9FF /* ProfileViewController.swift */,
 				C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */,
+				C38579EF2573619A0087BCB6 /* TabBarViewController.swift */,
 			);
 			path = iOS_ScienceCore;
 			sourceTree = "<group>";
@@ -189,6 +192,11 @@
 		D91FC13F967957731E760E09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				TargetAttributes = {
+					D91FC1C645CF82B9A6B36C5D = {
+						DevelopmentTeam = 9P2Q9LCYN9;
+					};
+				};
 			};
 			buildConfigurationList = D91FCAC68888E3DB8BFB0A3F /* Build configuration list for PBXProject "iOS_ScienceCore" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,6 +301,7 @@
 				C34E6F842572023900FCB6B3 /* UsersCollectionViewCell.swift in Sources */,
 				C34E6F7A2571CEB600FCB6B3 /* ProfileModel.swift in Sources */,
 				C3D4D6F625715D890025C9FF /* UsersModel.swift in Sources */,
+				C38579F02573619A0087BCB6 /* TabBarViewController.swift in Sources */,
 				D91FC1A631803EE4707C2434 /* AppDelegate.swift in Sources */,
 				C34E6F772571C5BC00FCB6B3 /* UserParser.swift in Sources */,
 				C34E6F962572E50000FCB6B3 /* AbstractModel.swift in Sources */,
@@ -340,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				DEVELOPMENT_TEAM = 9P2Q9LCYN9;
 				INFOPLIST_FILE = iOS_ScienceCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nick.iOS-ScienceCore";
@@ -470,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				DEVELOPMENT_TEAM = 9P2Q9LCYN9;
 				INFOPLIST_FILE = iOS_ScienceCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nick.iOS-ScienceCore";

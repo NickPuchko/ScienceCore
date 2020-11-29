@@ -51,11 +51,6 @@ class AbstractViewController: UIViewController, UITextViewDelegate {
         }) { (_) in
             sleep(1)
             self.setupProgress()
-//            UIView.animate(withDuration: 2.0, animations: {
-//                self.setupProgress()
-//            }) { (_) in
-//
-//            }
         }
     }
     
