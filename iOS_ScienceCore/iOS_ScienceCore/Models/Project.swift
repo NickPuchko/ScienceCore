@@ -20,7 +20,7 @@ struct Project {
         type.rawValue * spreading.rawValue
     }()
     
-    init(label: String = "", date: Date = Date(), ref: URL = URL(string: "https://vk.com/oobermensch")!, tags: [Tag] = [], crue: Int = 0) {
+    init(label: String = "", date: Date = Date(), ref: URL = URL(string: "https://vk.com/oobermensch")!, tags: [Tag] = [], crue: Int = 1) {
         self.label = label
         self.date = date
         self.ref = ref

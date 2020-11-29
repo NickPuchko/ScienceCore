@@ -8,9 +8,19 @@
 import UIKit
 
 class AbstractViewController: UIViewController, UITextViewDelegate {
-
+    var model: AbstractModel?
+    
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var applyStyleButton: UIButton!
+    
+//    init(project: Project) {
+//        self.model = AbstractModel(project: project)
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +41,20 @@ class AbstractViewController: UIViewController, UITextViewDelegate {
         return true
     }
     
-
+    func createML() {
+        //let data = try ML
+    }
+    
+    @IBAction func didApply(_ sender: Any) {
+        model?.project.tags = [.computerScience, .economics]
+        model?.addProject()
+        dismiss(animated: true)
+        
+        //self.tabBarController!.selectedIndex = 4
+    
+        
+    }
+    
     /*
     // MARK: - Navigation
 

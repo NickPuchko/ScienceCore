@@ -11,7 +11,7 @@ import UIKit
 
 class CreationViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var model = CreationModel()
-
+    
     @IBOutlet weak var addStyle: UIButton!
     @IBOutlet weak var label: UITextField!
     @IBOutlet weak var url: UITextField!
@@ -122,9 +122,15 @@ class CreationViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
         model.project.date = datePicker.date
         let vc: AbstractViewController = storyboard!.instantiateViewController(identifier: "AbstractViewController") as AbstractViewController
-        self.present(vc, animated: true, completion: nil)
+        vc.model = AbstractModel(project: model.project)
+        self.present(vc, animated: true, completion: {
+            self.goToProfile()
+        })
     }
     
+    func goToProfile() {
+        self.tabBarController?.selectedIndex = 4
+    }
 
     
     

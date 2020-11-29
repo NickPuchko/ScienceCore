@@ -16,6 +16,8 @@
 		C34E6F842572023900FCB6B3 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F832572023900FCB6B3 /* UsersCollectionViewCell.swift */; };
 		C34E6F8F25728EC900FCB6B3 /* CreationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */; };
 		C34E6F932572D35A00FCB6B3 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */; };
+		C34E6F962572E50000FCB6B3 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F952572E50000FCB6B3 /* AbstractModel.swift */; };
+		C34E6F992573215F00FCB6B3 /* train_filtered.csv in Resources */ = {isa = PBXBuildFile; fileRef = C34E6F982573215F00FCB6B3 /* train_filtered.csv */; };
 		C3D4D6E5257154D00025C9FF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */; };
 		C3D4D6E8257155340025C9FF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E7257155340025C9FF /* EventsViewController.swift */; };
 		C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */; };
@@ -43,6 +45,8 @@
 		C34E6F832572023900FCB6B3 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModel.swift; sourceTree = "<group>"; };
 		C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		C34E6F952572E50000FCB6B3 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
+		C34E6F982573215F00FCB6B3 /* train_filtered.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = train_filtered.csv; sourceTree = "<group>"; };
 		C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		C3D4D6E7257155340025C9FF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		C34E6F722571C30A00FCB6B3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C34E6F982573215F00FCB6B3 /* train_filtered.csv */,
 				C34E6F732571C31C00FCB6B3 /* FirebaseRef.swift */,
 				C34E6F762571C5BC00FCB6B3 /* UserParser.swift */,
 				C34E6F802571CF5200FCB6B3 /* Sample.swift */,
@@ -92,6 +97,7 @@
 				C34E6F6F2571B55C00FCB6B3 /* Project.swift */,
 				C34E6F792571CEB600FCB6B3 /* ProfileModel.swift */,
 				C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */,
+				C34E6F952572E50000FCB6B3 /* AbstractModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				C3D4D6FC2571B2000025C9FF /* GoogleService-Info.plist in Resources */,
 				D91FC8D757AA2CDA357B9556 /* LaunchScreen.storyboard in Resources */,
 				D91FCB7F2638341EEE136F85 /* Main.storyboard in Resources */,
+				C34E6F992573215F00FCB6B3 /* train_filtered.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 				C3D4D6F625715D890025C9FF /* UsersModel.swift in Sources */,
 				D91FC1A631803EE4707C2434 /* AppDelegate.swift in Sources */,
 				C34E6F772571C5BC00FCB6B3 /* UserParser.swift in Sources */,
+				C34E6F962572E50000FCB6B3 /* AbstractModel.swift in Sources */,
 				D91FCF052653B55400EC7CB9 /* SceneDelegate.swift in Sources */,
 				C3D4D6EE257155E50025C9FF /* UsersViewController.swift in Sources */,
 				D91FC49BCB7F9B4157794810 /* ViewController.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ProfileViewController: UIViewController {
     let model = ProfileModel()
@@ -17,7 +18,16 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var isOpen: UILabel!
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var percent: UILabel!
+    @IBOutlet weak var projectsCount: UILabel!
     
+    @IBAction func showScopus(_ sender: Any) {
+        let webvc = SFSafariViewController(url: Sample.scopusUrl) 
+        self.present(webvc, animated: true)
+    }
+    @IBAction func showRSUE(_ sender: Any) {
+        let webvc = SFSafariViewController(url: Sample.rsueUrl)
+        self.present(webvc, animated: true)
+    }
     
     @IBAction func switchOpen(_ sender: UISwitch) {
         model.user.isOpen = !model.user.isOpen
@@ -39,6 +49,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         isOpen.text = "Профиль скрыт"
+        projectsCount.text = String(model.user.projects.count)
         
         userImage.clipsToBounds = true
         userImage.layer.cornerRadius = userImage.bounds.width/2
