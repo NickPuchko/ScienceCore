@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Введите аннотацию публикации" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdZ-c9-K8J">
-                                <rect key="frame" x="20" y="123" width="374" height="561"/>
+                                <rect key="frame" x="20" y="82" width="374" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -225,7 +225,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-Wy-Tdf">
-                                <rect key="frame" x="109" y="692" width="196" height="51"/>
+                                <rect key="frame" x="109" y="664" width="196" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                 <state key="normal" title="Прикрепить">
@@ -235,12 +235,25 @@
                                     <action selector="didApply:" destination="CeJ-EE-fFg" eventType="touchUpInside" id="Fyw-0Z-Enx"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tGm-vV-tJN">
+                                <rect key="frame" x="20" y="778" width="374" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer Science" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5H-I2-GiY">
+                                <rect key="frame" x="124" y="731" width="166" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FFA-3C-m2c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="applyStyleButton" destination="Q79-Wy-Tdf" id="Rk9-VX-pqh"/>
+                        <outlet property="progressBar" destination="tGm-vV-tJN" id="X3U-3H-NeR"/>
+                        <outlet property="tag" destination="x5H-I2-GiY" id="gwA-Ob-7PO"/>
                         <outlet property="textView" destination="hdZ-c9-K8J" id="wlt-e8-Nsd"/>
                     </connections>
                 </viewController>

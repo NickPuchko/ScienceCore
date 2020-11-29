@@ -17,7 +17,7 @@
 		C34E6F8F25728EC900FCB6B3 /* CreationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */; };
 		C34E6F932572D35A00FCB6B3 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */; };
 		C34E6F962572E50000FCB6B3 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E6F952572E50000FCB6B3 /* AbstractModel.swift */; };
-		C34E6F992573215F00FCB6B3 /* train_filtered.csv in Resources */ = {isa = PBXBuildFile; fileRef = C34E6F982573215F00FCB6B3 /* train_filtered.csv */; };
+		C38579EC25734D4A0087BCB6 /* TClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C38579EB25734D4A0087BCB6 /* TClassifier.mlmodel */; };
 		C3D4D6E5257154D00025C9FF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */; };
 		C3D4D6E8257155340025C9FF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6E7257155340025C9FF /* EventsViewController.swift */; };
 		C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */; };
@@ -46,7 +46,7 @@
 		C34E6F8E25728EC900FCB6B3 /* CreationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModel.swift; sourceTree = "<group>"; };
 		C34E6F922572D35A00FCB6B3 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		C34E6F952572E50000FCB6B3 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
-		C34E6F982573215F00FCB6B3 /* train_filtered.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = train_filtered.csv; sourceTree = "<group>"; };
+		C38579EB25734D4A0087BCB6 /* TClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TClassifier.mlmodel; sourceTree = "<group>"; };
 		C3D4D6E4257154D00025C9FF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		C3D4D6E7257155340025C9FF /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C3D4D6EA257155AD0025C9FF /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,6 @@
 		C34E6F722571C30A00FCB6B3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C34E6F982573215F00FCB6B3 /* train_filtered.csv */,
 				C34E6F732571C31C00FCB6B3 /* FirebaseRef.swift */,
 				C34E6F762571C5BC00FCB6B3 /* UserParser.swift */,
 				C34E6F802571CF5200FCB6B3 /* Sample.swift */,
@@ -123,6 +122,7 @@
 		D91FCCB788CDB336D0EE0EAC /* iOS_ScienceCore */ = {
 			isa = PBXGroup;
 			children = (
+				C38579EB25734D4A0087BCB6 /* TClassifier.mlmodel */,
 				C34E6F722571C30A00FCB6B3 /* Helpers */,
 				C3D4D6FB2571B2000025C9FF /* GoogleService-Info.plist */,
 				C3D4D6F425715D6B0025C9FF /* Models */,
@@ -218,7 +218,6 @@
 				C3D4D6FC2571B2000025C9FF /* GoogleService-Info.plist in Resources */,
 				D91FC8D757AA2CDA357B9556 /* LaunchScreen.storyboard in Resources */,
 				D91FCB7F2638341EEE136F85 /* Main.storyboard in Resources */,
-				C34E6F992573215F00FCB6B3 /* train_filtered.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +305,7 @@
 				C34E6F702571B55C00FCB6B3 /* Project.swift in Sources */,
 				C3D4D6F1257156200025C9FF /* ProfileViewController.swift in Sources */,
 				C3D4D6F925715DAA0025C9FF /* User.swift in Sources */,
+				C38579EC25734D4A0087BCB6 /* TClassifier.mlmodel in Sources */,
 				C34E6F8F25728EC900FCB6B3 /* CreationModel.swift in Sources */,
 				C34E6F932572D35A00FCB6B3 /* AbstractViewController.swift in Sources */,
 				C3D4D6EB257155AD0025C9FF /* CreationViewController.swift in Sources */,

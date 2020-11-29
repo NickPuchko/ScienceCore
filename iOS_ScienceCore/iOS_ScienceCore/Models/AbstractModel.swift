@@ -6,12 +6,23 @@
 //
 
 import Foundation
+import NaturalLanguage
+import CoreML
+
+
 
 class AbstractModel {
     var project: Project
-    
+    let mlModel = try! TClassifier(configuration: MLModelConfiguration()).model
+
     init(project: Project) {
         self.project = project
+    }
+    
+    
+    func analizeTags(abstract: String) {
+        let tagPredictor = try! NLModel(mlModel: mlModel)
+        project.tags = [tagPredictor.predictedLabel(for: abstract) ?? "Computer Science"]
     }
     
     func addProject() {
@@ -22,7 +33,7 @@ class AbstractModel {
              "date" : project.date.description,
              "spreading" : project.spreading.rawValue,
              "type" : project.type.rawValue,
-             "tags" : project.tags.map { $0.rawValue }
+             "tags" : project.tags
             ] as [String : Any]
         guard let key = FirebaseRef.ref.child("Projects").childByAutoId().key else {
                 print("No auto id!")
@@ -31,17 +42,4 @@ class AbstractModel {
         let childUpdates = ["/Projects/\(key)" : post]
         FirebaseRef.ref.updateChildValues(childUpdates)
     }
-    
-    
 }
-
-//var label: String
-//var date: Date
-//var ref: URL
-//var tags: [Tag]
-//var crue: Int
-//var type: ProjectType = .article
-//var spreading: Spreading = .regional
-//lazy var value: Float = {
-//    type.rawValue * spreading.rawValue
-//}()

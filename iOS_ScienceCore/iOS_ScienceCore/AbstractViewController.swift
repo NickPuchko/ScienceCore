@@ -7,23 +7,20 @@
 
 import UIKit
 
+
 class AbstractViewController: UIViewController, UITextViewDelegate {
     var model: AbstractModel?
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var applyStyleButton: UIButton!
     
-//    init(project: Project) {
-//        self.model = AbstractModel(project: project)
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    private var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        progressBar.alpha = 0
+        progressBar.progress = 0
+        tag.alpha = 0
         applyStyleButton.layer.cornerRadius = 10
         applyStyleButton.layer.borderWidth = 2
         applyStyleButton.layer.borderColor = UIColor.gray.cgColor
@@ -41,28 +38,49 @@ class AbstractViewController: UIViewController, UITextViewDelegate {
         return true
     }
     
-    func createML() {
-        //let data = try ML
-    }
+    @IBOutlet weak var progressBar: UIProgressView!
     
     @IBAction func didApply(_ sender: Any) {
-        model?.project.tags = [.computerScience, .economics]
+        model?.analizeTags(abstract: textView.text)
         model?.addProject()
-        dismiss(animated: true)
         
-        //self.tabBarController!.selectedIndex = 4
-    
         
+        UIView.animate(withDuration: 2, animations: {
+            self.applyStyleButton.alpha = 0
+            self.progressBar.alpha = 1
+        }) { (_) in
+            sleep(1)
+            self.setupProgress()
+//            UIView.animate(withDuration: 2.0, animations: {
+//                self.setupProgress()
+//            }) { (_) in
+//
+//            }
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var tag: UILabel!
+    
+    
+    private func setupProgress() {
+        timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(increaseTimer), userInfo: nil, repeats: true)
     }
-    */
+    
+    @objc
+    func increaseTimer() {
+        switch progressBar.progress {
+        case 1:
+            self.timer.invalidate()
+            UIView.animate(withDuration: 1.0, animations: {
+                self.tag.text = self.model?.project.tags.first
+                self.tag.alpha = 1
+            }) { (_) in
+                sleep(2)
+                self.dismiss(animated: true)
+            }
 
+        default:
+            progressBar.setProgress(progressBar.progress + 0.001, animated: true)
+        }
+    }
 }

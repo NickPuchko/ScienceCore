@@ -49,7 +49,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         isOpen.text = "Профиль скрыт"
-        projectsCount.text = String(model.user.projects.count)
+        projectsCount.text = String(model.user.projects.count + 1)
         
         userImage.clipsToBounds = true
         userImage.layer.cornerRadius = userImage.bounds.width/2

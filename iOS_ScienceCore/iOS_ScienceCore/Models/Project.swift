@@ -12,7 +12,7 @@ struct Project {
     var label: String
     var date: Date
     var ref: URL
-    var tags: [Tag]
+    var tags: [String]
     var crue: Int
     var type: ProjectType = .article
     var spreading: Spreading = .regional
@@ -20,7 +20,7 @@ struct Project {
         type.rawValue * spreading.rawValue
     }()
     
-    init(label: String = "", date: Date = Date(), ref: URL = URL(string: "https://vk.com/oobermensch")!, tags: [Tag] = [], crue: Int = 1) {
+    init(label: String = "", date: Date = Date(), ref: URL = URL(string: "https://vk.com/oobermensch")!, tags: [String] = [], crue: Int = 1) {
         self.label = label
         self.date = date
         self.ref = ref
@@ -28,10 +28,10 @@ struct Project {
         self.crue = crue
     }
 }
-
-enum Tag: String, CaseIterable {
-    case economics, math, computerScience, law
-}
+//
+//enum Tag: String, CaseIterable {
+//    case economics, math, computerScience, law
+//}
 
 enum ProjectType: Float, CaseIterable {
     case article = 1, preprint = 0.8
