@@ -265,38 +265,36 @@
         <scene sceneID="fHY-Yg-MHM">
             <objects>
                 <collectionViewController storyboardIdentifier="Users" title="Сотрудники" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bow-92-9Bt" customClass="UsersViewController" customModule="iOS_ScienceCore" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TH3-zW-zl6">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2Ve-p7-rV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kzn-38-0n4">
-                            <size key="itemSize" width="414" height="128"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E6d-jy-Rqm">
+                            <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCell" id="9cd-Rm-SlT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dbP-IX-dsm">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2xi-f7-4l5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sp1-Ea-AfN">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <size key="customSize" width="414" height="128"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="bow-92-9Bt" id="rH1-Ps-4mP"/>
-                            <outlet property="delegate" destination="bow-92-9Bt" id="9tF-4B-kuH"/>
+                            <outlet property="dataSource" destination="bow-92-9Bt" id="8x3-9W-ev5"/>
+                            <outlet property="delegate" destination="bow-92-9Bt" id="mha-3i-Lk1"/>
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" tag="4" title="Сотрудники" image="person.3" catalog="system" id="Pys-6v-9Gb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97K-eN-53R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108.695652173913" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2107.2463768115945" y="87.723214285714278"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="YuG-cN-GKj">

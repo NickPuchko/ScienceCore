@@ -17,9 +17,7 @@ class UsersModel {
         users = []
         
         FirebaseRef.ref.child("Users").observeSingleEvent(of: .value, with: { [self] snapshot in
-            print(users.count)
             users = UserParser.usersFromSnapshot(snapshot: snapshot)
-            print(users.count)
             viewController.fetchData(users: users)
             //self?.viewController?.loadViewIfNeeded()
             //self?.viewController.collectionView.reloadData()
